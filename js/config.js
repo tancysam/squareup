@@ -52,9 +52,7 @@ class Config {
 			'y/': {
 				urlPrefix: 'https://youtube.com/results?search_query='
 			},
-			'n/': {
-				urlPrefix: 'https://nhentai.net/g/'
-			},
+			
 			'g/': {
 				urlPrefix: 'https://github.com/search?q='
 			}
@@ -66,41 +64,12 @@ class Config {
 	getSearchEngines() {
 
 		const searchEngines = {
-			'startpage': {
-				name: 'Startpage',
-				prefix: 'https://www.startpage.com/do/dsearch?query=',
-				icon: 'startpage'
-			},
-			'qwant': {
-				name: 'Qwant',
-				prefix: 'https://www.qwant.com/?q=',
-				icon: 'qwant'
-			},
-			'ecosia': {
-				name: 'Ecosia',
-				prefix: 'https://www.ecosia.org/search?q=',
-				icon: 'ecosia'
-			},
-			'duckduckgo': {
-				name: 'Duckduckgo',
-				prefix: 'https://duckduckgo.com/?q=',
-				icon: 'duckduckgo'
-			},
-			'yahoo': {
-				name: 'Yahoo',
-				prefix: 'https://search.yahoo.com/search?p=',
-				icon: 'yahoo'
-			},
 			'google': {
 				name: 'Google',
 				prefix: 'https://www.google.com/search?q=',
 				icon: 'google'
 			},
-			'bing': {
-				name: 'Bing',
-				prefix: 'https://www.bing.com/search?q=',
-				icon: 'bing'
-			}
+			
 		};
 
 		return searchEngines;
@@ -123,10 +92,10 @@ class Config {
 				category: 'development'
 			},
 			{
-				site: 'Facebook',
-				icon: 'facebook',
-				url: 'https://facebook.com/',
-				category: 'social'
+				site: 'Cloudflare',
+				icon: 'cloudflare',
+				url: 'https://dash.cloudflare.com/',
+				category: 'development'
 			},
 			{
 				site: 'Gmail',
@@ -138,13 +107,13 @@ class Config {
 				site: 'Youtube',
 				icon: 'youtube',
 				url: 'https://youtube.com/',
-				category: 'media'
+				category: 'Entertainment'
 			},
 			{
 				site: 'Google Drive',
 				icon: 'gdrive',
 				url: 'https://drive.google.com/',
-				category: 'cloud'
+				category: 'utilities'
 			},
 			{
 				site: 'Twitter',
@@ -159,35 +128,25 @@ class Config {
 				category: 'social'
 			},
 			{
-				site: 'Bitbucket',
-				icon: 'bitbucket',
-				url: 'https://bitbucket.org/',
-				category: 'development'
+				site: 'Shopee',
+				icon: 'shopee',
+				url: 'https://shopee.sg/',
+				category: 'shop'
 			},
 			{
-				site: 'Gitlab',
-				icon: 'gitlab',
-				url: 'https://gitlab.com/',
-				category: 'development'
+				site: 'Shopee MY',
+				icon: 'shopee',
+				url: 'https://shopee.my/',
+				category: 'shop'
 			},
-			{
-				site: 'Deviantart',
-				icon: 'deviantart',
-				url: 'https://deviantart.com/',
-				category: 'design'
-			},
+
 			{
 				site: 'Duckduckgo',
 				icon: 'duckduckgo',
 				url: 'https://duckduckgo.com/',
 				category: 'search engine'
 			},
-			{
-				site: 'Ecosia',
-				icon: 'ecosia',
-				url: 'https://ecosia.org/',
-				category: 'search engine'
-			},
+
 			{
 				site: 'Google',
 				icon: 'google',
@@ -200,53 +159,24 @@ class Config {
 				url: 'https://wikipedia.org/',
 				category: 'information'
 			},
-			{
-				site: 'Unsplash',
-				icon: 'unsplash',
-				url: 'https://unsplash.com/',
-				category: 'design'
-			},
-			{
-				site: 'Twitch',
-				icon: 'twitch',
-				url: 'https://twitch.tv/',
-				category: 'media'
-			},
-			{
-				site: 'Yahoo',
-				icon: 'yahoo',
-				url: 'https://mail.yahoo.com/',
-				category: 'search engine'
-			},
-			{
-				site: 'Bing',
-				icon: 'bing',
-				url: 'https://bing.com',
-				category: 'search engine'
-			},
-			{
-				site: 'Material.io',
-				icon: 'materialio',
-				url: 'https://material.io/',
-				category: 'design'
-			},
-			{
-				site: 'Netflix',
-				icon: 'netflix',
-				url: 'https://netflix.com/',
-				category: 'media'
-			},
+
 			{
 				site: 'Office 365',
 				icon: 'office365',
 				url: 'https://office.com/',
-				category: 'information'
+				category: 'utilities'
 			},
 			{
 				site: '4chan',
 				icon: '4chan',
 				url: 'https://4chan.org/',
 				category: 'social'
+			},
+			{
+				site: 'NYJC Portal',
+				icon: 'nyjcportal',
+				url: 'https://portal.nyjc.edu.sg/',
+				category: 'Academics'
 			},
 			{
 				site: 'Discord',
@@ -258,31 +188,7 @@ class Config {
 				site: 'Spotify',
 				icon: 'spotify',
 				url: 'https://spotify.com/',
-				category: 'media'
-			},
-			{
-				site: 'Ebay',
-				icon: 'ebay',
-				url: 'https://ebay.com/',
-				category: 'shop'
-			},
-			{
-				site: 'JSFiddle',
-				icon: 'jsfiddle',
-				url: 'https://jsfiddle.net/',
-				category: 'development'
-			},
-			{
-				site: 'ArchWiki',
-				icon: 'archwiki',
-				url: 'https://wiki.archlinux.org/',
-				category: 'information'
-			},
-			{
-				site: 'Figma',
-				icon: 'figma',
-				url: 'https://figma.com/',
-				category: 'design'
+				category: 'Entertainment'
 			},
 			{
 				site: 'Stackoverflow',
@@ -290,36 +196,14 @@ class Config {
 				url: 'https://stackoverflow.com/',
 				category: 'development'
 			},
-			{
-				site: 'Stackexchange',
-				icon: 'stackexchange',
-				url: 'https://stackexchange.com/',
-				category: 'development'
-			},
-			{
-				site: 'Superuser',
-				icon: 'superuser',
-				url: 'https://superuser.com/',
-				category: 'development'
-			},
+		
 			{
 				site: 'Calendar',
 				icon: 'calendar',
 				url: 'https://calendar.google.com/',
-				category: 'social'
+				category: 'utilities'
 			},
-			{
-				site: 'Messenger',
-				icon: 'messenger',
-				url: 'https://messenger.com/',
-				category: 'social'
-			},
-			{
-				site: 'Icons8',
-				icon: 'icons8',
-				url: 'https://icons8.com/',
-				category: 'design'
-			},
+			
 			{
 				site: 'Markdown Cheatsheet',
 				icon: 'markdown',
@@ -332,60 +216,59 @@ class Config {
 				url: 'https://internetingishard.com/',
 				category: 'development'
 			},
-			{
-				site: 'Keycode',
-				icon: 'keycode',
-				url: 'https://keycode.info/',
-				category: 'development'
-			},
-			{
-				site: 'Soundcloud',
-				icon: 'soundcloud',
-				url: 'https://soundcloud.com/',
-				category: 'media'
-			},
+			
 			{
 				site: 'Amazon',
 				icon: 'amazon',
 				url: 'https://amazon.com/',
 				category: 'shop'
 			},
+			
 			{
-				site: 'Flaticon',
-				icon: 'flaticon',
-				url: 'https://flaticon.com/',
-				category: 'design'
+				site: 'XDA Forum',
+				icon: 'xda',
+				url: 'https://forum.xda-developers.com/c/oneplus-8t.11579/',
+				category: 'social'
 			},
 			{
-				site: 'Wikimedia Commons',
-				icon: 'commons',
-				url: 'https://commons.wikimedia.org/',
-				category: 'design'
+				site: 'iQiyi',
+				icon: 'iqiyi',
+				url: 'https://iq.com/',
+				category: 'Entertainment'
 			},
 			{
-				site: 'MEGA',
-				icon: 'mega',
-				url: 'https://mega.nz/',
-				category: 'cloud'
+				site: 'Wormhole',
+				icon: 'wormhole',
+				url: 'https://wormhole.app/',
+				category: 'utilities'
 			},
 			{
-				site: 'MDN Web Docs',
-				icon: 'mdn',
-				url: 'https://developer.mozilla.org/',
-				category: 'development'
+				site: 'Lazada',
+				icon: 'lazada',
+				url: 'https://lazada.com/',
+				category: 'shop'
 			},
 			{
-				site: 'Qwant',
-				icon: 'qwant',
-				url: 'https://qwant.com/',
-				category: 'search engine'
+				site: 'dnsleaktest',
+				icon: 'dnsleaktest',
+				url: 'https://dnsleaktest.com/',
+				category: 'utilities'
 			},
 			{
-				site: 'Startpage',
-				icon: 'startpage',
-				url: 'https://startpage.com/',
-				category: 'search engine'
-			}
+				site: 'Bitwarden',
+				icon: 'bitwarden',
+				url: 'https://bitwarden.com/',
+				category: 'utilities'
+			},
+			{
+				site: 'Taobao',
+				icon: 'taobao',
+				url: 'https://taobao.com/',
+				category: 'Shop'
+			},
+			
+			
+			
 		];
 
 		return webSites;
@@ -401,14 +284,19 @@ class Config {
 				url: 'https://reddit.com/'
 			},
 			{
-				site: 'Github',
-				icon: 'github',
-				url: 'https://github.com/'
+				site: 'Youtube',
+				icon: 'youtube',
+				url: 'https://youtube.com/'
 			},
 			{
-				site: 'Facebook',
-				icon: 'facebook',
-				url: 'https://facebook.com/'
+				site: 'AdGuard Home',
+				icon: 'AdGuard',
+				url: 'https://dns.tancysam.me/'
+			},
+			{
+				site: 'NYJC Portal',
+				icon: 'nyjcportal',
+				url: 'https://portal.nyjc.edu.sg/'
 			},
 			{
 				site: 'Gmail',
@@ -421,20 +309,21 @@ class Config {
 				url: 'https://youtube.com/'
 			},
 			{
+				site: 'Shopee',
+				icon: 'shopee',
+				url: 'https://shopee.sg/'
+			},
+			{
 				site: 'GDrive',
 				icon: 'gdrive',
 				url: 'https://drive.google.com/'
 			},
 			{
-				site: 'Twitter',
-				icon: 'twitter',
-				url: 'https://twitter.com/'
+				site: 'Taobao',
+				icon: 'taobao',
+				url: 'https://taobao.com/'
 			},
-			{
-				site: 'Material.io',
-				icon: 'materialio',
-				url: 'https://material.io/'
-			}
+			
 		];
 
 		return panelSites;
